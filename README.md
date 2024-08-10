@@ -30,7 +30,7 @@ be found at <https://hexdocs.pm/google_oauth>.
         GoogleOAuth.Certs
       ]
 
-      opts = [strategy: :one_for_one, name: Nomdoc.Supervisor]
+      opts = [strategy: :one_for_one, name: YourApplication.Supervisor]
       Supervisor.start_link(children, opts)
     end
   end
